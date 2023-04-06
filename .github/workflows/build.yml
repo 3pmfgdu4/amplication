@@ -1,9 +1,9 @@
-name: ci
+name: Build docker image
 
 on:
   push:
-    branches:
-      - 'mastar'
+    branches: [master]
+    workflow_dispatch:
 
 jobs:
   docker:
